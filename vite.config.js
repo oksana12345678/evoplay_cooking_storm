@@ -26,7 +26,7 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: '../evoplay_cooking_storm/dist',
     },
     plugins: [
       injectHTML(),

@@ -7,7 +7,7 @@ import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
-    base: 'cooking-storm/',
+    base: '/cooking-storm/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },

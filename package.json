@@ -1,11 +1,11 @@
 {
-  "name": "evoplay-cooking-storm",
+  "name": "vanilla-vite-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evoplay-cooking-storm/",
+    "build": "vite build --base=/cooking-storm/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",

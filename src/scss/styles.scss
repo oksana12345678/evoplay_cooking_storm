@@ -1,14 +1,49 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './about.scss';
+@import './advantages.scss';
+@import './dishes.scss';
+@import './footer.scss';
+@import './reviews.scss';
+@import './play.scss';
+@import './hero.scss';
+@import './gallery.scss';
+
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('../fonts/fredoka-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', 'Fredoka One', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #000;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

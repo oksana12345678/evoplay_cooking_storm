@@ -20,9 +20,10 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Oksana Tanashchuk <oksana.tanashuk@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.0.5",

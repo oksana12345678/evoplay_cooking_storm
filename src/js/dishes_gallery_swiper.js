@@ -33,11 +33,10 @@ const createSwiper = (containerSelector, nextSelector, prevSelector) => {
     },
   });
 
-  // Додаємо подію для повернення до першого слайда
   swiper.on('reachEnd', () => {
     setTimeout(() => {
-      swiper.slideTo(0, 1000); // Повернення до першого слайда з плавною анімацією (1000 мс)
-    }, 500); // Затримка перед поверненням (500 мс)
+      swiper.slideTo(0, 1000);
+    }, 1000);
   });
 
   swiper.update();

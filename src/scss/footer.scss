@@ -14,20 +14,13 @@
   margin-top: 24px;
 }
 
-@include media(desktop) {
-  .footer {
-    width: 1200px;
-
-    margin-top: 50px;
-  }
-}
-
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .footer-list {
@@ -42,4 +35,28 @@
 
 .footer-desc {
   font-size: 12px;
+}
+
+@include media(desktop) {
+  .footer {
+    width: 1200px;
+
+    margin-top: 50px;
+  }
+
+  .footer-list {
+    align-items: flex-start;
+    padding-right: 114px;
+    font-size: 16px;
+  }
+
+  .footer-list-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+  }
 }

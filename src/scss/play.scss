@@ -1,0 +1,99 @@
+.play {
+  padding-top: 32px;
+  width: 100%;
+  background-image: url('/img/bg_spoon.svg');
+  background-size: contain;
+}
+
+.play-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+}
+.title-play {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 24px;
+  @include media(desktop) {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+}
+.play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 956px;
+  }
+}
+.play-item {
+  fill: $_secondary_text_color;
+  color: $_secondary_text_color;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  padding: 16px;
+  width: 288px;
+  box-shadow: inset 0 4px 12px 0 #901e43;
+  background-color: $_bg_cherry_color;
+
+  @include media(desktop) {
+    width: 270px;
+  }
+}
+
+.play-item.color {
+  fill: black;
+  color: black;
+  background-color: $_bg_orange_color;
+}
+
+@include media(desktop) {
+  .play-item.color,
+  .color-desctop {
+    fill: black;
+    color: black;
+    background-color: $_bg_orange_color;
+    width: 368px;
+  }
+}
+
+.wrapper-play {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 8px;
+  @include media(desktop) {
+    gap: 16 px;
+  }
+}
+.icon-number {
+}
+.title-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  @include media(desktop) {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.descr-play {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--white);
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}

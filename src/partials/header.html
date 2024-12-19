@@ -1,18 +1,21 @@
-<header class="header container">
-  <div class="header-box">
+<header class="header section">
+  <div class="header-box container">
     <a href="#hero"
       ><img
         width="52px"
         height="52px"
         class="logo"
-        src="/img/logo/Logo@1x.png"
+        srcset="/img/logo/Logo@1x.png 1x, /img/logo/Logo@2x.png 2x"
+        src="/img/logo/Logo.svg"
         alt="logo"
     /></a>
-    <div class="burger-menu" id="burgerMenu">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+    <button class="btn-burger">
+      <div class="burger-menu" id="burgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </button>
     <nav class="menu" id="menu">
       <ul class="menu-list">
         <li class="menu-item"><a href="#home">Home</a></li>
@@ -25,3 +28,18 @@
     </nav>
   </div>
 </header>
+<div class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-btn">
+      <div class="close-icon" onclick="closeModal()"></div>
+    </button>
+    <ul class="menu-list-modal">
+      <li class="menu-item-modal"><a href="#home">Home</a></li>
+      <li><a href="#play">How to Play</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#advantages">Advantages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#dishes">Featured Dishes</a></li>
+    </ul>
+  </div>
+</div>

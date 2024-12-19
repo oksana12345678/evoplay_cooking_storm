@@ -36,7 +36,7 @@ const createSwiper = (containerSelector, nextSelector, prevSelector) => {
   swiper.on('reachEnd', () => {
     setTimeout(() => {
       swiper.slideTo(0, 1000);
-    }, 1000);
+    }, 1200);
   });
 
   swiper.update();

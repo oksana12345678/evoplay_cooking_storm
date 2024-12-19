@@ -3,15 +3,21 @@
   width: 100%;
   background-image: url('/img/bg_spoon.svg');
   background-size: contain;
+  @include media(desktop) {
+    padding-top: 0px;
+  }
 }
 
 .play-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media(desktop) {
+    padding-top: 94px;
+    padding-bottom: 160px;
+  }
 }
-.container {
-}
+
 .title-play {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -25,6 +31,7 @@
     padding-bottom: 48px;
   }
 }
+
 .play-list {
   display: flex;
   flex-direction: column;
@@ -37,6 +44,7 @@
     max-width: 956px;
   }
 }
+
 .play-item {
   fill: $_secondary_text_color;
   color: $_secondary_text_color;
@@ -76,8 +84,10 @@
     gap: 16 px;
   }
 }
+
 .icon-number {
 }
+
 .title-item {
   font-weight: 500;
   font-size: 16px;

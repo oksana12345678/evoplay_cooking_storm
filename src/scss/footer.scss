@@ -1,0 +1,29 @@
+.footer {
+  background-image: $_bg_gradient;
+  border-radius: 50px 50px 0 0;
+  box-shadow: $_box_shadow_on_gradient;
+  padding: 24px 0;
+  height: 190px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: underline;
+  font-size: 14px;
+  gap: 16px;
+}
+
+.footer-desc {
+  font-size: 12px;
+}

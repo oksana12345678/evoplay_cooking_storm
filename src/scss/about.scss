@@ -1,0 +1,55 @@
+.about {
+  padding: 16px 0;
+}
+
+.about-container {
+  background: $_bg_gradient;
+  box-shadow: $_box_shadow_on_gradient;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title {
+  padding-top: 16px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.about-desc {
+  padding-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.55556;
+  letter-spacing: 0.02em;
+}
+
+.about-subtitle {
+  font-family: 'Fredoka One', sans-serif;
+
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@include media(desktop) {
+  .about-title {
+    padding-top: 68px;
+  }
+
+  .about-subtitle {
+    font-size: 24px;
+  }
+
+  .about-desc {
+    width: 858px;
+    padding-bottom: 68px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

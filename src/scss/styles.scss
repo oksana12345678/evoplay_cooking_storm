@@ -27,15 +27,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.section {
-  padding: 16px 0;
-}
 .container {
   padding: 0 16px;
+}
+.section {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @include media(desktop) {
   .section {
+    width: 1200px;
     padding: 50px 0;
   }
   .container {

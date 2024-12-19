@@ -1,0 +1,38 @@
+.gallery {
+  padding: 16px 0;
+}
+
+.gallery-list {
+  max-width: 288px;
+}
+
+.gallery-list-item {
+  max-width: 288px;
+}
+
+.gallery-image {
+  width: 288px;
+  height: 200px;
+}
+
+.button-pre,
+.button-nex {
+  background: transparent;
+  border: none;
+}
+
+@include media(desktop) {
+  .gallery-list {
+    max-width: 1152px;
+  }
+
+  .gallery-list-item {
+    max-width: 368px;
+    margin-right: 24px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+  }
+}

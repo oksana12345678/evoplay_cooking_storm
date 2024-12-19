@@ -4,6 +4,22 @@
   box-shadow: $_box_shadow_on_gradient;
   padding: 24px 0;
   height: 190px;
+
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+@include media(desktop) {
+  .footer {
+    width: 1200px;
+
+    margin-top: 50px;
+  }
 }
 
 .footer-container {

@@ -4,6 +4,9 @@
   padding-bottom: 24px;
   padding-top: 16px;
   min-height: 490px;
+
+  background-image: url(../img/bg_spoon_mb.svg);
+  background-size: cover;
 }
 
 .dishes-main-title {
@@ -92,6 +95,8 @@
 @include media(desktop) {
   .dishes {
     padding: 50px 0;
+    background-image: url(../img/bg_spoon.svg);
+    background-size: cover;
   }
   .dishes-main-title {
     margin-bottom: 48px;

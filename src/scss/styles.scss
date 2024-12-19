@@ -29,9 +29,9 @@
 
 .container {
   padding: 0 16px;
+  width: 320px;
 }
 .section {
-  width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -41,10 +41,10 @@
 
 @include media(desktop) {
   .section {
-    width: 1200px;
     padding: 50px 0;
   }
   .container {
     padding: 0 24px;
+    width: 1200px;
   }
 }

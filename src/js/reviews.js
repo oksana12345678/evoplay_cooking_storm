@@ -2,23 +2,26 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css/navigation';
 
-const createSwiper = (containerSelector, nextSelector, prevSelector) => {
+const createSwiper = (
+  containerSelector,
+  nextSelector,
+  prevSelector,
+  options = {}
+) => {
   const swiperContainer = document.querySelector(containerSelector);
   const BUTTON_NEXT = document.querySelector(nextSelector);
   const BUTTON_PREV = document.querySelector(prevSelector);
 
-  const swiper = new Swiper(swiperContainer, {
+  const defaultOptions = {
     modules: [Navigation, Keyboard],
     navigation: {
       nextEl: BUTTON_NEXT,
       prevEl: BUTTON_PREV,
     },
     direction: 'horizontal',
-    loop: true,
     autoHeight: false,
     autoWidth: false,
     watchOverflow: false,
-
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -30,20 +33,16 @@ const createSwiper = (containerSelector, nextSelector, prevSelector) => {
         spaceBetween: 24,
       },
       1200: {
-        slidesPerView: 4,
-        spaceBetween: 24,
+        slidesPerView: 3,
       },
     },
-  });
+  };
 
-  swiper.update(); // Оновлення після ініціалізації
-
-  return swiper;
+  const swiper = new Swiper(swiperContainer, { ...defaultOptions, ...options });
 };
-
-// Ініціалізація Swiper для секції відгуків
 const swiperOne = createSwiper(
   '.swiper.swiper-one',
   '.button-next-svg',
-  '.button-prev-svg'
+  '.button-prev-svg',
+  { loop: true }
 );

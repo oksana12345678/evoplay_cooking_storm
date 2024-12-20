@@ -1,17 +1,18 @@
-.play {
-  padding-top: 32px;
+.play.section {
   width: 100%;
-  background-image: url('/img/bg_spoon.svg');
-  background-size: contain;
+
   @include media(desktop) {
-    padding-top: 0px;
+    padding: 0px;
   }
 }
 
-.play-box {
+.play-box.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 32px;
+  background-image: url('/img/bg_spoon.svg');
+  background-size: contain;
   @include media(desktop) {
     padding-top: 94px;
     padding-bottom: 160px;
@@ -46,7 +47,8 @@
 }
 
 .play-item {
-  fill: $_secondary_text_color;
+  stroke: $_secondary_text_color;
+  fill: transparent;
   color: $_secondary_text_color;
   font-family: 'Poppins', sans-serif;
   border-radius: 20px;
@@ -61,16 +63,17 @@
 }
 
 .play-item.color {
-  fill: black;
-  color: black;
+  stroke: black;
+  fill: transparent;
   background-color: $_bg_orange_color;
 }
 
 @include media(desktop) {
   .play-item.color,
   .color-desctop {
-    fill: black;
     color: black;
+    stroke: black;
+    fill: transparent;
     background-color: $_bg_orange_color;
     width: 368px;
   }
@@ -86,6 +89,8 @@
 }
 
 .icon-number {
+  width: 24px;
+  height: 24px;
 }
 
 .title-item {

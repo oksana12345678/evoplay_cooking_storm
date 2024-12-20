@@ -1,31 +1,41 @@
-.hero {
+.hero.section {
+  padding: 0;
 }
 
-.hero-box.section {
+.hero-box.container {
   min-height: 510px;
   background-image: url('/img/hero/heroBG_MB@2x.png');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
-  align-items: flex-end;
 
   @include media(desktop) {
+    display: flex;
     min-height: 686px;
     background-image: url('/img/hero/heroBG@2x.png');
     flex-direction: row-reverse;
     align-items: center;
   }
 }
-
-.img {
+.img-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
   margin-bottom: 24px;
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+.img {
   width: 300px;
   height: 170px;
   @include media(desktop) {
     min-width: 686px;
     height: 389px;
-    margin: 0;
   }
+}
+.hero-wrapper {
+  padding: 0 16px;
 }
 .title {
   font-family: 'Fredoka One', sans-serif;
@@ -46,6 +56,7 @@
   @include media(desktop) {
     font-size: 28px;
     line-height: 136%;
+    margin-bottom: 48px;
   }
 }
 .google-link {

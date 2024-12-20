@@ -5,3 +5,7 @@ const modal = document.querySelector('.modal-overlay');
 btnOpen.addEventListener('click', () => {
   modal.classList.add('is-open');
 });
+
+btnClose.addEventListener('click', () => {
+  modal.classList.remove('is-open');
+});

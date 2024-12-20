@@ -9,29 +9,361 @@
     <script type="module" crossorigin src="/evoplay_cooking_storm/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/evoplay_cooking_storm/assets/vendor-245775bf.js">
     <link rel="stylesheet" href="/evoplay_cooking_storm/assets/vendor-dc865a26.css">
-    <link rel="stylesheet" href="/evoplay_cooking_storm/assets/styles-a5414f08.css">
+    <link rel="stylesheet" href="/evoplay_cooking_storm/assets/styles-8d0107e6.css">
   </head>
   <body>
-    
+    <header class="header section">
+  <div class="header-box container">
+    <a href="#hero"
+      ><img
+        width="52px"
+        height="52px"
+        class="logo"
+        srcset="/evoplay_cooking_storm/assets/Logo@1x-8319f956.png 1x, /evoplay_cooking_storm/assets/Logo@2x-be60ea15.png 2x"
+        src="/evoplay_cooking_storm/assets/Logo-f8081b71.svg"
+        alt="logo"
+    /></a>
+    <button class="btn-burger">
+      <div class="burger-menu" id="burgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </button>
+    <nav class="menu" id="menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#play">How to Play</a></li>
+        <li class="menu-item"><a href="#about">About us</a></li>
+        <li class="menu-item"><a href="#advantages">Advantages</a></li>
+        <li class="menu-item"><a href="#gallery">Gallery</a></li>
+        <li class="menu-item"><a href="#dishes">Featured Dishes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="modal-overlay">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <svg class="close-icon" width="24px" height="24px">
+        <use
+          href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-bitcoin-icons_cross-filled"
+        ></use>
+      </svg>
+    </button>
+    <ul class="menu-list-modal">
+      <li class="menu-item-modal"><a href="#home">Home</a></li>
+      <li><a href="#play">How to Play</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#advantages">Advantages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#dishes">Featured Dishes</a></li>
+    </ul>
+  </div>
+</div>
+
 
     <main>
-      
-      
-      
-      
-      <section class="about section">
+      <section class="hero section" id="home">
+  <div class="hero-box container">
+    <div class="img-box">
+      <img
+        class="img"
+        srcset="/evoplay_cooking_storm/assets/hero@1x-4495b991.png 1x, /evoplay_cooking_storm/assets/hero@2x-9d5ecad0.png 2x"
+        src="/evoplay_cooking_storm/assets/hero@1x-4495b991.png"
+        alt="Game image"
+      />
+    </div>
+    <div class="hero-wrapper">
+      <h2 class="title">Cooking Storm</h2>
+      <p class="descr">
+        Join the culinary adventure and master the art of cooking under
+        pressure!
+      </p>
+      <a
+        target="_blank"
+        class="google-link"
+        href="https://play.google.com/store/apps/details?id=com.gamestown.cooking.games"
+      >
+        <svg class="icon-google" width="32px" height="32px">
+          <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-google-play-icon"></use>
+        </svg>
+        <p class="descr-link">Download on Google Play</p></a
+      >
+    </div>
+  </div>
+</section>
+
+      <section class="play section" id="play">
+  <div class="play-box container">
+    <h2 class="title-play">How to Play</h2>
+    <ul class="play-list">
+      <li class="play-item">
+        <div class="wrapper-play">
+          <svg class="icon-number" width="24px" height="24px">
+            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-one"></use>
+          </svg>
+          <h3 class="title-item">Cook and Serve</h3>
+        </div>
+        <p class="descr-play">
+          Prepare a wide range of dishes using the ingredients available to you
+          and serve them to customers.
+        </p>
+      </li>
+      <li class="play-item color">
+        <div class="wrapper-play">
+          <svg class="icon-number" width="24px" height="24px">
+            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-two"></use>
+          </svg>
+          <h3 class="title-item">Upgrade Your Kitchen</h3>
+        </div>
+        <p class="descr-play">
+          Improve your kitchen appliances, unlock new recipes, and enhance your
+          cooking abilities.
+        </p>
+      </li>
+      <li class="play-item">
+        <div class="wrapper-play">
+          <svg class="icon-number" width="24px" height="24px">
+            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-three"></use>
+          </svg>
+          <h3 class="title-item">Complete Orders</h3>
+        </div>
+        <p class="descr-play">
+          Serve customers quickly and accurately to earn rewards and advance to
+          new levels.
+        </p>
+      </li>
+      <li class="play-item color">
+        <div class="wrapper-play">
+          <svg class="icon-number" width="24px" height="24px">
+            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-four"></use>
+          </svg>
+          <h3 class="title-item">Challenge Yourself</h3>
+        </div>
+        <p class="descr-play">
+          Face increasingly difficult challenges as you rise through the ranks,
+          unlocking new restaurants and cuisines.
+        </p>
+      </li>
+      <li class="play-item color-desctop">
+        <div class="wrapper-play">
+          <svg class="icon-number" width="24px" height="24px">
+            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-five"></use>
+          </svg>
+          <h3 class="title-item">Time Management</h3>
+        </div>
+        <p class="descr-play">
+          Strategize your cooking process to handle multiple orders and avoid
+          mistakes in a fast-paced kitchen environment.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="advantages section" id="advantages">
+  <div class="advan-box container">
+    <h2 class="advan-title">Advantages</h2>
+    <div class="advan-desctop">
+      <img
+        class="advan-img"
+        srcset="/evoplay_cooking_storm/assets/advanteges@1x-980423ce.png 1x, /evoplay_cooking_storm/assets/advantages@2x-089c6312.png 2x"
+        src="/evoplay_cooking_storm/assets/advanteges@1x-980423ce.png"
+        alt="Advantages"
+      />
+      <ul class="advan-list">
+        <li class="advan-item">
+          <div class="advan-icon-wrapper">
+            <svg class="icon-advan">
+              <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-clock"></use>
+            </svg>
+            <h3 class="advan-item-title">Fast-Paced Fun</h3>
+          </div>
+          <p class="avan-descr">
+            A high-energy game that challenges your ability to multitask and
+            manage time efficiently.
+          </p>
+        </li>
+        <li class="advan-item">
+          <div class="advan-icon-wrapper">
+            <svg class="icon-advan">
+              <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-recipe-book"></use>
+            </svg>
+            <h3 class="advan-item-title">Variety of Recipes</h3>
+          </div>
+          <p class="avan-descr">
+            Unlock and cook a wide range of dishes from different cuisines, each
+            with its unique challenges.
+          </p>
+        </li>
+        <li class="advan-item">
+          <div class="advan-icon-wrapper">
+            <svg class="icon-advan">
+              <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-productivity"></use>
+            </svg>
+            <h3 class="advan-item-title">Exciting Upgrades</h3>
+          </div>
+          <p class="avan-descr">
+            Upgrade your kitchen tools and earn rewards to improve your cooking
+            abilities.
+          </p>
+        </li>
+        <li class="advan-item">
+          <div class="advan-icon-wrapper">
+            <svg class="icon-advan">
+              <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-SparklesOutline"></use>
+            </svg>
+            <h3 class="advan-item-title">Creative Kitchens</h3>
+          </div>
+          <p class="avan-descr">
+            Design and decorate your kitchen to reflect your personal style as
+            you unlock new levels.
+          </p>
+        </li>
+        <li class="advan-item">
+          <div class="advan-icon-wrapper">
+            <svg class="icon-advan">
+              <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-wifi-slash"></use>
+            </svg>
+            <h3 class="advan-item-title">Offline Play</h3>
+          </div>
+          <p class="avan-descr">
+            Enjoy the game anywhere, even without an internet connection!
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews section">
+  <div class="reviews-box container">
+    <h2 class="reviews-title">User Reviews</h2>
+
+    <div class="swiper swiper-one">
+      <ul class="reviews-list swiper-wrapper">
+        <li class="reviews-item swiper-slide">
+          <img
+            class="reviews-img"
+            srcset="/evoplay_cooking_storm/assets/first_review-362c67f4.png 1x, /evoplay_cooking_storm/assets/first_review@2x-d6f5d5b4.png 2x"
+            src="/evoplay_cooking_storm/assets/first_review-362c67f4.png"
+            alt="Reviews"
+          />
+          <div class="reviews-name-wrapper">
+            <svg class="reviews-svg">
+              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+            </svg>
+
+            <h3 class="reviews-name">ChefMaster</h3>
+          </div>
+          <p class="reviews-text">
+            Cooking Storm is a blast! I love the variety of dishes and the time
+            management challenges.
+          </p>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <img
+            class="reviews-img"
+            srcset="/evoplay_cooking_storm/assets/second_review@1x-6cda6a87.png 1x, /evoplay_cooking_storm/assets/second_review@2x-6dfdbac9.png 2x"
+            src="/evoplay_cooking_storm/assets/second_review@1x-6cda6a87.png"
+            alt="Reviews"
+          />
+          <div class="reviews-name-wrapper">
+            <svg class="reviews-svg">
+              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+            </svg>
+            <h3 class="reviews-name">DailyCook</h3>
+          </div>
+          <p class="reviews-text">
+            Perfect for anyone who loves cooking games. The graphics and
+            gameplay are top-notch!
+          </p>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <img
+            class="reviews-img"
+            srcset="/evoplay_cooking_storm/assets/third_review@1x-fe687ed3.png 1x, /evoplay_cooking_storm/assets/third_review@2x-ef3f96d2.png 2x"
+            src="/evoplay_cooking_storm/assets/third_review@1x-fe687ed3.png"
+            alt="Reviews"
+          />
+          <div class="reviews-name-wrapper">
+            <svg class="reviews-svg">
+              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+            </svg>
+            <h3 class="reviews-name">RecipeLover</h3>
+          </div>
+          <p class="reviews-text">
+            I enjoy learning new recipes and managing my kitchen as I progress
+            through levels.
+          </p>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <img
+            class="reviews-img"
+            srcset="/evoplay_cooking_storm/assets/fourth_review@1x-bb2a9ca9.png 1x, /evoplay_cooking_storm/assets/fourth_review@2x-f4cb0eb4.png 2x"
+            src="/evoplay_cooking_storm/assets/fourth_review@1x-bb2a9ca9.png"
+            alt="Reviews"
+          />
+          <div class="reviews-name-wrapper">
+            <svg class="reviews-svg">
+              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+            </svg>
+            <h3 class="reviews-name">KitchenKing</h3>
+          </div>
+          <p class="reviews-text">
+            This game keeps me on my toes! I can’t get enough of the cooking and
+            serving gameplay.
+          </p>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <img
+            class="reviews-img"
+            srcset="/evoplay_cooking_storm/assets/second_review@1x-6cda6a87.png 1x, /evoplay_cooking_storm/assets/second_review@2x-6dfdbac9.png 2x"
+            src="/evoplay_cooking_storm/assets/second_review@1x-6cda6a87.png"
+            alt="Reviews"
+          />
+          <div class="reviews-name-wrapper">
+            <svg class="reviews-svg">
+              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+            </svg>
+            <h3 class="reviews-name">CookingFanatic</h3>
+          </div>
+          <p class="reviews-text">
+            Fast-paced and so much fun! The upgrades and challenges are really
+            addictive.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="reviews-arrow">
+      <button class="button-prev-svg" type="button" aria-label="Next">
+        <svg class="arrow-swiper">
+          <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-arrow_left" />
+        </svg>
+      </button>
+      <button class="button-next-svg" type="button" aria-label="Previous">
+        <svg class="arrow-swiper">
+          <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-arrow_right" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="about section" id="about">
   <div class="about-container container">
     <h2 class="about-title">About Us</h2>
     <p class="about-desc">
-      <span class="about-subtitle">Cooking Storm</span> is an
-      exciting and fast-paced time-management game where players step into the
-      shoes of a chef, preparing and serving delicious dishes to hungry
-      customers. From street food stalls to high-end restaurants, each level
-      brings new cooking challenges, from managing ingredients to handling a
-      bustling kitchen. Players can unlock new recipes, upgrade their kitchens,
-      and compete against time to serve customers efficiently. Whether you're a
-      fan of cooking games or love a good challenge, Cooking Storm brings the
-      heat and excitement straight to your screen.
+      <span class="about-subtitle">Cooking Storm</span> is an exciting and
+      fast-paced time-management game where players step into the shoes of a
+      chef, preparing and serving delicious dishes to hungry customers. From
+      street food stalls to high-end restaurants, each level brings new cooking
+      challenges, from managing ingredients to handling a bustling kitchen.
+      Players can unlock new recipes, upgrade their kitchens, and compete
+      against time to serve customers efficiently. Whether you're a fan of
+      cooking games or love a good challenge, Cooking Storm brings the heat and
+      excitement straight to your screen.
     </p>
   </div>
 </section>

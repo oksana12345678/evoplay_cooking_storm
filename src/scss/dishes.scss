@@ -4,6 +4,9 @@
   padding-bottom: 24px;
   padding-top: 16px;
   min-height: 490px;
+
+  background-image: url(../img/bg_spoon_mb.svg);
+  background-size: cover;
 }
 
 .dishes-main-title {
@@ -46,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   text-align: center;
 }
@@ -92,6 +95,8 @@
 @include media(desktop) {
   .dishes {
     padding: 50px 0;
+    background-image: url(../img/bg_spoon.svg);
+    background-size: cover;
   }
   .dishes-main-title {
     margin-bottom: 48px;
@@ -154,16 +159,17 @@
     width: 172px;
     height: 172px;
   }
+
   .dishes_desc_container {
     width: 270px;
     height: 228px;
     padding: 8px;
-    padding-top: 24px;
+    padding-top: 36px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
   }
 

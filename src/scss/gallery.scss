@@ -2,6 +2,10 @@
   padding: 16px 0;
 }
 
+.swiper.swiper-box {
+  max-width: 320px;
+}
+
 .gallery-list {
   max-width: 288px;
 }
@@ -22,9 +26,13 @@
 }
 
 @include media(desktop) {
-  .gallery-list {
-    max-width: 1152px;
+  .swiper.swiper-box {
+    max-width: 1200px;
   }
+
+  // .gallery-list {
+  //   max-width: 1152px;
+  // }
 
   .gallery-list-item {
     max-width: 368px;

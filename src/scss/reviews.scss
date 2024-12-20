@@ -1,0 +1,116 @@
+@import 'swiper/swiper-bundle.css';
+.reviews {
+}
+.section {
+}
+.reviews-box {
+}
+.container {
+}
+.reviews-title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+}
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: $_secondary_text_color;
+
+  padding: 36px 16px;
+  max-width: 288px;
+  height: 278px;
+  box-shadow: inset 0 4px 12px 0 #901e43;
+  background: $_bg_cherry_color;
+
+  &:nth-child(1) {
+    border-radius: 0 20px 20px 0;
+  }
+
+  &:nth-child(2),
+  &:nth-child(5) {
+    border-radius: 20px 20px 0 0;
+  }
+
+  &:nth-child(3) {
+    border-radius: 0 0 20px 20px;
+  }
+
+  &:nth-child(4) {
+    border-radius: 20px 0 0 20px;
+  }
+}
+.reviews-img {
+  margin-bottom: 16px;
+}
+.reviews-svg {
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+.reviews-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
+  @include media(desktop) {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+}
+.reviews-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+/* button */
+.reviews-arrow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+  gap: 28px;
+  @include media(desktop) {
+    padding-top: 48px;
+    gap: 40px;
+  }
+}
+.button-prev-svg,
+.button-next-svg {
+  background-color: transparent;
+  border: none;
+}
+
+.arrow-swiper,
+.arrow-swiper {
+  fill: $_bg_orange_color;
+  width: 26px;
+  height: 26px;
+  transition: fill 300ms ease;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}

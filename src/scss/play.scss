@@ -82,10 +82,11 @@
 
 .wrapper-play {
   display: flex;
+  align-items: center;
   gap: 12px;
   padding-bottom: 8px;
   @include media(desktop) {
-    gap: 16 px;
+    gap: 16px;
   }
 }
 

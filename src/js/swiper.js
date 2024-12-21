@@ -86,3 +86,9 @@ const swiperTwo = createSwiper(
   '.button-pre',
   { on: { reachEnd: () => setTimeout(() => swiperTwo.slideTo(0, 1000), 1000) } }
 );
+const swiperThree = createSwiper(
+  '.swiper.swiper-reviews',
+  '.button-next-review',
+  '.button-prev-review',
+  { loop: true }
+);

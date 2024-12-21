@@ -1,5 +1,4 @@
 const btnOpen = document.querySelector('.btn-burger');
-const btnClose = document.querySelector('.close-btn');
 const modal = document.querySelector('.modal-overlay');
 const modalContent = document.querySelector('.modal-content');
 const burgerMenu = document.querySelector('.burger-menu');
@@ -27,9 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 btnOpen.addEventListener('click', () => {
-  burgerMenu.classList.toggle('is-open');
-  modal.classList.toggle('is-open');
+  const isModalOpen = modal.classList.contains('is-open'); // Перевіряємо, чи модалка відкрита
+
+  if (isModalOpen) {
+    // Якщо модалка відкрита, закриваємо її
+    modal.classList.remove('is-open');
+    burgerMenu.classList.remove('is-open');
+    document.body.style.overflow = ''; // Відновлюємо прокручування
+  } else {
+    // Якщо модалка закрита, відкриваємо її
+    modal.classList.add('is-open');
+    burgerMenu.classList.add('is-open');
+    document.body.style.overflow = 'hidden'; // Відключаємо прокручування
+  }
 });
+
 modalContent.addEventListener('click', e => {
   e.stopPropagation();
 });
@@ -38,6 +49,7 @@ modal.addEventListener('click', e => {
   if (e.target === modal) {
     modal.classList.remove('is-open');
     burgerMenu.classList.remove('is-open');
+    document.body.style.overflow = '';
   }
 });
 
@@ -45,5 +57,6 @@ navigation.forEach(item => {
   item.addEventListener('click', () => {
     modal.classList.remove('is-open');
     burgerMenu.classList.remove('is-open');
+    document.body.style.overflow = '';
   });
 });

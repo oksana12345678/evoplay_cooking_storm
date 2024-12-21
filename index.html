@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cooking Storm</title>
     
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/evoplay_cooking_storm/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/evoplay_cooking_storm/assets/vendor-245775bf.js">
     <link rel="stylesheet" href="/evoplay_cooking_storm/assets/vendor-dc865a26.css">
-    <link rel="stylesheet" href="/evoplay_cooking_storm/assets/styles-06baa6eb.css">
+    <link rel="stylesheet" href="/evoplay_cooking_storm/assets/styles-3d6e61ff.css">
   </head>
   <body>
     <header class="header section">
@@ -35,8 +39,8 @@
         <ul class="menu-list-modal">
           <li><a class="menu-item-modal" href="#home">Home</a></li>
           <li><a class="menu-item-modal" href="#play">How to Play</a></li>
-          <li><a class="menu-item-modal" href="#about">About us</a></li>
           <li><a class="menu-item-modal" href="#advantages">Advantages</a></li>
+          <li><a class="menu-item-modal" href="#about">About us</a></li>
           <li><a class="menu-item-modal" href="#gallery">Gallery</a></li>
           <li><a class="menu-item-modal" href="#dishes">Featured Dishes</a></li>
         </ul>
@@ -46,8 +50,8 @@
       <ul class="menu-list">
         <li class="menu-item"><a href="#home">Home</a></li>
         <li class="menu-item"><a href="#play">How to Play</a></li>
-        <li class="menu-item"><a href="#about">About us</a></li>
         <li class="menu-item"><a href="#advantages">Advantages</a></li>
+        <li class="menu-item"><a href="#about">About us</a></li>
         <li class="menu-item"><a href="#gallery">Gallery</a></li>
         <li class="menu-item"><a href="#dishes">Featured Dishes</a></li>
       </ul>
@@ -91,10 +95,10 @@
   <div class="play-box container">
     <h2 class="title-play">How to Play</h2>
     <ul class="play-list">
-      <li class="play-item">
+      <li class="play-item" data-aos="fade-right">
         <div class="wrapper-play">
-          <svg class="icon-number" width="24px" height="24px">
-            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-one"></use>
+          <svg class="icon-number">
+            <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-number-1"></use>
           </svg>
           <h3 class="title-item">Cook and Serve</h3>
         </div>
@@ -103,10 +107,10 @@
           and serve them to customers.
         </p>
       </li>
-      <li class="play-item color">
+      <li class="play-item color" data-aos="fade-left">
         <div class="wrapper-play">
-          <svg class="icon-number" width="24px" height="24px">
-            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-two"></use>
+          <svg class="icon-number">
+            <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-number-2"></use>
           </svg>
           <h3 class="title-item">Upgrade Your Kitchen</h3>
         </div>
@@ -115,10 +119,10 @@
           cooking abilities.
         </p>
       </li>
-      <li class="play-item">
+      <li class="play-item" data-aos="fade-right">
         <div class="wrapper-play">
           <svg class="icon-number" width="24px" height="24px">
-            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-three"></use>
+            <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-number-3"></use>
           </svg>
           <h3 class="title-item">Complete Orders</h3>
         </div>
@@ -127,10 +131,10 @@
           new levels.
         </p>
       </li>
-      <li class="play-item color">
+      <li class="play-item color" data-aos="fade-left">
         <div class="wrapper-play">
           <svg class="icon-number" width="24px" height="24px">
-            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-four"></use>
+            <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-number-4"></use>
           </svg>
           <h3 class="title-item">Challenge Yourself</h3>
         </div>
@@ -139,10 +143,10 @@
           unlocking new restaurants and cuisines.
         </p>
       </li>
-      <li class="play-item color-desctop">
+      <li class="play-item color-desctop" data-aos="fade-right">
         <div class="wrapper-play">
           <svg class="icon-number" width="24px" height="24px">
-            <use href="/evoplay_cooking_storm/assets/sprite-58f56791.svg#icon-five"></use>
+            <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-number-5"></use>
           </svg>
           <h3 class="title-item">Time Management</h3>
         </div>
@@ -156,7 +160,7 @@
 </section>
 
       <section class="advantages section" id="advantages">
-  <div class="advan-box container">
+  <div class="advan-box container" data-aos="fade-right">
     <h2 class="advan-title">Advantages</h2>
     <div class="advan-desctop">
       <img
@@ -235,7 +239,7 @@
     <h2 class="reviews-title">User Reviews</h2>
 
     <div class="swiper swiper-reviews">
-      <ul class="reviews-list swiper-wrapper">
+      <ul class="reviews-list swiper-wrapper" data-aos="fade-right">
         <li class="reviews-item swiper-slide">
           <img
             class="reviews-img"
@@ -245,7 +249,7 @@
           />
           <div class="reviews-name-wrapper">
             <svg class="reviews-svg">
-              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+              <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-ri_double-quotes-l" />
             </svg>
 
             <h3 class="reviews-name">ChefMaster</h3>
@@ -264,7 +268,7 @@
           />
           <div class="reviews-name-wrapper">
             <svg class="reviews-svg">
-              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+              <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-ri_double-quotes-l" />
             </svg>
             <h3 class="reviews-name">DailyCook</h3>
           </div>
@@ -282,7 +286,7 @@
           />
           <div class="reviews-name-wrapper">
             <svg class="reviews-svg">
-              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+              <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-ri_double-quotes-l" />
             </svg>
             <h3 class="reviews-name">RecipeLover</h3>
           </div>
@@ -300,7 +304,7 @@
           />
           <div class="reviews-name-wrapper">
             <svg class="reviews-svg">
-              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+              <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-ri_double-quotes-l" />
             </svg>
             <h3 class="reviews-name">KitchenKing</h3>
           </div>
@@ -318,7 +322,7 @@
           />
           <div class="reviews-name-wrapper">
             <svg class="reviews-svg">
-              <use href="/evoplay_cooking_storm/assets/sprite-second-b2892e57.svg#icon-ri_double-quotes-l" />
+              <use href="/evoplay_cooking_storm/assets/sprite-second-d905f3a0.svg#icon-ri_double-quotes-l" />
             </svg>
             <h3 class="reviews-name">CookingFanatic</h3>
           </div>
@@ -345,7 +349,7 @@
 </section>
 
       <section class="about section" id="about">
-  <div class="about-container container">
+  <div class="about-container container" data-aos="fade-right">
     <h2 class="about-title">About Us</h2>
     <p class="about-desc">
       <span class="about-subtitle">Cooking Storm</span> is an exciting and
@@ -367,7 +371,7 @@
       <h2 class="dishes-main-title">Gallery</h2>
     </div>
     <div class="swiper swiper-box">
-      <ul class="gallery-list swiper-wrapper">
+      <ul class="gallery-list swiper-wrapper" data-aos="fade-right">
         <li class="swiper-slide gallery-list-item">
           <img
             class="gallery-image"
@@ -446,7 +450,7 @@
       <h2 class="dishes-main-title">Featured Dishes</h2>
     </div>
     <div class="swiper swiper-one">
-      <ul class="dishes-list swiper-wrapper">
+      <ul class="dishes-list swiper-wrapper" data-aos="fade-right">
         <li class="swiper-slide dishes-list-item">
           <img
             class="dishes-image"
@@ -569,6 +573,7 @@
 </div>
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
   </body>
 </html>

@@ -26,18 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 btnOpen.addEventListener('click', () => {
-  const isModalOpen = modal.classList.contains('is-open'); // Перевіряємо, чи модалка відкрита
+  const isModalOpen = modal.classList.contains('is-open');
 
   if (isModalOpen) {
-    // Якщо модалка відкрита, закриваємо її
     modal.classList.remove('is-open');
     burgerMenu.classList.remove('is-open');
-    document.body.style.overflow = ''; // Відновлюємо прокручування
+    document.body.style.overflow = '';
   } else {
-    // Якщо модалка закрита, відкриваємо її
     modal.classList.add('is-open');
     burgerMenu.classList.add('is-open');
-    document.body.style.overflow = 'hidden'; // Відключаємо прокручування
+    document.body.style.overflow = 'hidden';
   }
 });
 

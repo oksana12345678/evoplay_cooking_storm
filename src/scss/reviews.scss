@@ -57,6 +57,13 @@
     border-radius: 20px 0 0 20px;
   }
 }
+
+@include media(desktop) {
+  .reviews-item {
+    max-width: 270px;
+  }
+}
+
 .reviews-img {
   margin-bottom: 16px;
 }
